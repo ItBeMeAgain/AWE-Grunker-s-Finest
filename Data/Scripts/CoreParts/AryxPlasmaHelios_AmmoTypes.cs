@@ -89,7 +89,7 @@ namespace Scripts
                 FallOff = new FallOffDef
                 {
                     Distance = 8000f, // Distance at which max damage begins falling off.
-                    MinMultipler = 0.45f, // value from 0.0f to 1f where 0.1f would be a min damage of 10% of max damage.
+                    MinMultipler = 1f, // value from 0.0f to 1f where 0.1f would be a min damage of 10% of max damage.
                 },
                 Grids = new GridSizeDef
                 {
@@ -105,7 +105,7 @@ namespace Scripts
                 },
                 Shields = new ShieldDef
                 {
-                    Modifier = 10f,
+                    Modifier = 25f,
                     Type = Default,
                     BypassModifier = -1f,
                 },
