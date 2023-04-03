@@ -772,11 +772,11 @@ namespace Scripts
                 EndOfLife = new EndOfLifeDef
                 {
                     Enable = true,
-                    Radius = 3.5f, // Meters
+                    Radius = 8f, // Meters
                     Damage = (float)(6000 * AWEGlobalDamageScalar),
-                    Depth = 1f,
+                    Depth = 4f,
                     MaxAbsorb = 0f,
-                    Falloff = Curve, //.NoFalloff applies the same damage to all blocks in radius
+                    Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius
                     //.Linear drops evenly by distance from center out to max radius
                     //.Curve drops off damage sharply as it approaches the max radius
                     //.InvCurve drops off sharply from the middle and tapers to max radius
@@ -1122,7 +1122,7 @@ namespace Scripts
                 Type = Offense, // EnergySink, Emp, Offense, Nav, Dot, AntiSmart, JumpNull, Anchor, Tractor, Pull, Push, 
                 Mode = Effect, // Effect , Field
                 Strength = 5000000f,
-                Radius = 3f, // Meters
+                Radius = 10f, // Meters
                 Duration = 600, // In Ticks
                 StackDuration = false, // Combined Durations
                 Depletable = true,
@@ -1498,8 +1498,8 @@ namespace Scripts
                 Type = JumpNull, // EnergySink, Emp, Offense, Nav, Dot, AntiSmart, JumpNull, Anchor, Tractor, Pull, Push, 
                 Mode = Effect, // Effect , Field
                 Strength = 100000000f,
-                Radius = 50f, // Meters
-                Duration = 1800, // In Ticks
+                Radius = 150f, // Meters
+                Duration = 2000, // In Ticks
                 StackDuration = true, // Combined Durations
                 Depletable = true,
                 MaxStacks = 2, // Max Debuffs at once
