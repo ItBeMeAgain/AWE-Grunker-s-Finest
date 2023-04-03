@@ -33,7 +33,7 @@ namespace Scripts
             AmmoRound = "AryxLightCoilgunAmmoWC",
             HybridRound = true, //AmmoMagazine based weapon with energy cost
             EnergyCost = 5f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = (float)(10000 * AWEGlobalDamageScalar),
+            BaseDamage = (float)(18000 * AWEGlobalDamageScalar),
             Mass = 3, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 750000f,
