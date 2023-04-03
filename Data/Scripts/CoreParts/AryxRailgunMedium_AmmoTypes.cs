@@ -32,7 +32,7 @@ namespace Scripts
             AmmoRound = "AryxRailgunAmmoWC",
             HybridRound = true, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.05f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = (float)(60000 * AWEGlobalDamageScalar),
+            BaseDamage = (float)(40000 * AWEGlobalDamageScalar),
             Mass = 25, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 500f,
@@ -82,7 +82,7 @@ namespace Scripts
                 FallOff = new FallOffDef
                 {
                     Distance = 5000f, // Distance at which damage begins falling off.
-                    MinMultipler = 0.1f, // Value from 0.0001f to 1f where 0.1f would be a min damage of 10% of base damage.
+                    MinMultipler = 0.2f, // Value from 0.0001f to 1f where 0.1f would be a min damage of 10% of base damage.
                 },
                 Grids = new GridSizeDef
                 {
